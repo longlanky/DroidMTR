@@ -1,0 +1,46 @@
+DroidMTR
+========
+
+Copyright (C) 2026 DroidMTR contributors
+
+DroidMTR is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License version 2 as published by the
+Free Software Foundation. It is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the file COPYING
+for the full license text.
+
+This application is an independent Android adaptation of the probing model
+and reporting conventions of the following GPLv2 projects:
+
+  * mtr — "my traceroute"
+    Copyright (C) 1997, 1998 Matt Kimball
+    Copyright (C) 2005 R.E. Wolff
+    Copyright (C) 2016 Matt Kimball and contributors
+    https://github.com/traviscross/mtr
+    A local reference copy of the upstream source was used during development;
+    it is not vendored into this repository.
+
+  * WinMTR
+    Copyright (C) 2000 Vasile Laurentiu Stanimir
+    Copyright (C) 2010-2011 Appnor MSP
+    Maintained by Dragos Manac and contributors
+    https://github.com/WinMTR/WinMTR-Official
+    A local reference copy of the upstream source was used during development;
+    it is not vendored into this repository.
+
+DroidMTR does not include or execute the mtr-packet helper, and does not
+require root, raw sockets, or a setuid binary. The native probe engine in
+`native/dmtr_engine.c` was written for Android and uses unprivileged ICMP
+datagram sockets with a UDP fallback.
+
+The application uses Flutter and the following packages (see the in-app
+license page for their full texts):
+
+  * Flutter / Dart — BSD 3-Clause
+  * path_provider, shared_preferences, share_plus, wakelock_plus — BSD 3-Clause
+  * intl — BSD 3-Clause
+  * ffi — BSD 3-Clause
+
+The DroidMTR launcher icon, splash mark, and interface design are original
+works for this project.
